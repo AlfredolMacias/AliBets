@@ -1,0 +1,63 @@
+<div class="container fluid">
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <h1 style="text-align: center; margin-top:1em; margin-bottom:1em;">New Pick</h1>
+            <form action="/guardarPick" method="POST">
+                <div class="form-group">
+                    <label for="deporte">Deporte</label>
+                    <select name="deporte" id="deporte" class="custom-select">
+                        <option value="Futbol">Futbol</option>
+                        <option value="Futbol Americano">Futbol Americano</option>
+                        <option value="Baseball">Baseball</option>
+                        <option value="Basketball">Basketball</option>
+                        <option value="Tenis">Tenis</option>
+                        <option value="Automovilismo">Automovilismo</option>
+                        <option value="Hockey">Hockey</option>
+                        <option value="Boxeo">Boxeo</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="Liga">Liga</label>
+                    <input type="text" class="form-control" name="liga" placeholder="Ingresa la liga">
+                </div>
+                <div class="form-group">
+                    <label for="evento">Evento</label>
+                    <input type="text" class="form-control" name="evento" placeholder="Ingresa el evento">
+                </div>
+                <div class="form-group">
+                    <label for="fecha">Fecha</label>
+                    <input type="date" name="fecha" id="datepicker" class="form-control"> 
+                </div>
+                <div class="form-group">
+                    <label for="hora">Hora</label>
+                    <input type="time" name="hora" id="datepicker" class="form-control"> 
+                </div>
+                <div class="form-group">
+                    <label for="linea">Linea</label>
+                    <input type="text" class="form-control" name="linea" placeholder="Ingresa la linea">
+                </div>
+                <div class="form-group">
+                    <label for="overunder">Linea</label>
+                    <input type="text" class="form-control" name="overunder" placeholder="Ingresa el Over / Under">
+                </div>
+                <div class="form-group">
+                    <label for="pick">Pick</label>
+                    <input type="text" class="form-control" name="pick" placeholder="Ingresa el pick">
+                </div>
+                <div class="form-group">
+                    <label for="texto">Texto</label>
+                    <textarea class="form-control" rows="10" placeholder="Texto" name="texto"></textarea>
+                </div>
+                <center><button class="btn btn-success" type="submit">Enviar</button></center>
+            </form>
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+
+</div>
+<script>
+    $(function(){
+        $("#datepicker").datepicker();
+    }); 
+</script>

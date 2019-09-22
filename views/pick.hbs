@@ -1,0 +1,41 @@
+<div class="container"   >
+    <div class="row">
+        <div class="col-8 col-12-medium">
+            <article class="box">
+                {{#each data}}
+                <img src="/images/{{this.deporte}}.jpg" alt="Images" class="img-header">
+                <header>
+                    <div class="row">
+                    <div class="col-xs-8 col-md-8 col-lg-8 valign">
+                        <h1>{{this.evento}}</h1>
+                        <h4>{{this.deporte}} - {{this.liga}}</h4>
+                    </div><!--
+                    --><div class="col-xs-4 col-md-4 col-lg-4 valign">
+                        <h5 align="right" class="valign">{{this.fecha}} - {{this.hora}}</h5>
+                    </div>
+                    </div>
+                </header>
+                <div class="lineas">
+                    <h5>Openning Lines</h5>
+                    <ul>
+                        <li><strong>{{this.linea}}</strong></li>
+                        <li><strong>Total: O/U {{this.overunder}}</strong></li>
+                    </ul>
+                </div>
+                <p align="justify"> {{this.comentario}}</p>
+
+                <div class="lineas2">
+                    <h5>Nuestra opinion</h5>
+                    <ul>
+                      <p align="justify"><strong>{{this.pick}}</strong></p>
+                    </ul>
+                </div>
+                {{/each}}
+                <p align="right"><em>* Las lineas y las cuotas pueden cambiar en cualquier momento</em></p>
+            </article>
+        </div>
+        <div class="col-4 col-12-medium">
+
+        </div>
+    </div>
+</div>

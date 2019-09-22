@@ -1,0 +1,98 @@
+.header .navbar {
+  background-color: transparent !important;
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+
+li{
+    margin-left:1em;
+    margin-right: 1em;
+}
+.thumbNail{
+    border-radius: 5px;
+    width: 100%;
+    height: 450px;
+}
+.thumbNail2{
+    margin-bottom: 20px;
+    border-radius: 5px;
+    width: 100%;
+    height: 215px;
+}
+.cont{
+    position: relative;
+}
+.csd1{
+    position: absolute;
+    bottom: 43px;
+    left: 20px;
+    color: white;
+}
+.csd{
+    position: absolute;
+    bottom: 15px;
+    left: 20px;
+    color: lightgrey;
+}
+.form-group{
+    margin-top:30px;
+}
+.img-header{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-top: 2em;
+    margin-bottom:2em;
+}
+header{
+    margin-bottom:2em;
+}
+.valign{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+h5,h4{
+    color: darkgrey;
+}
+strong{
+    margin-top: 2em;
+    margin-bottom:4em;
+}
+.lineas{
+    width: 100%;
+    height:100%;
+    padding: .5em;
+    margin-bottom: 2em;
+    background-color: lightgreen;
+    border-radius: 10px;
+}
+.lineas2{
+    margin-top: 2em;
+    width: 100%;
+    height:100%;
+    padding: .5em;
+    margin-bottom: 2em;
+    background-color: lightgreen;
+    border-radius: 10px;
+}
+footer{
+    margin-top: 2em;
+    background-color: lightgray;
+}
+.copy{
+    background-color: grey;
+    color:white;
+    text-decoration: nonde;
+}
+.link{
+    text-decoration: none;
+    color:white;
+}
+.img23{
+    width: 100%;
+    height: 250px;
+}
+.card-img{
+    height: 200px;
+}

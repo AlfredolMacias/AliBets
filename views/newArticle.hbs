@@ -1,0 +1,38 @@
+<div class="container fluid">
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <h1 style="text-align: center; margin-top:1em; margin-bottom:1em;">Nuevo Articulo</h1>
+            <form action="/guardarArticulo" method="POST">
+                <div class="form-group">
+                    <label for="Titulo">Titulo</label>
+                    <input type="text" class="form-control" name="titulo" placeholder="Ingresa el titulo">
+                </div>
+                <div class="form-group">
+                    <label for="Epigrafe">Epigrafe</label>
+                    <input type="text" class="form-control" name="epigrafe" placeholder="Ingresa la epigrafe">
+                </div>
+                <h6>Categorias</h6>
+                <div class="form-check form-check-inline" style="margin-top: .5em;">
+                    <input type="checkbox" class="form-check-input" name="categorias" value="NFL">
+                    <label class="form-check-label" for="inline-checkbox1">NFL</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input type="checkbox" class="form-check-input" name="categorias" value="MLB">
+                    <label class="form-check-label" for="inline-checkbox1">MLB</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input type="checkbox" class="form-check-input" name="categorias" value="Champions">
+                    <label class="form-check-label" for="inline-checkbox1">Champions League</label>
+                </div>
+                <div class="form-group">
+                    <label for="texto">Texto</label>
+                    <textarea class="form-control" rows="10" placeholder="Texto" name="texto"></textarea>
+                </div>
+                <center><button class="btn btn-success" type="submit">Enviar</button></center>
+            </form>
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+
+</div>

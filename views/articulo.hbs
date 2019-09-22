@@ -1,0 +1,22 @@
+<div class="container"   >
+    <div class="row">
+        <div class="col-8 col-12-medium">
+            <article class="box">
+                <img src="/images/1.jpg" alt="Images" class="img-header">
+                <header>
+                    {{#each data}}
+                    <h1>{{this.titulo}}</h1>
+                    <h4>{{this.epigrafe}}</h4>
+                    
+                </header>
+                <p align="justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias expedita magnam saepe reprehenderit aperiam aliquid? Dicta, atque libero ducimus, obcaecati natus consequuntur commodi beatae rem iste maiores veniam. Nemo, possimus.</p>
+                <p align="justify">{{this.texto}}</p>
+                {{/each}}
+
+            </article>
+        </div>
+        <div class="col-4 col-12-medium">
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,23 @@
+<div class="container px-lg-10">
+    <h1 align="center" style="margin: 1em;">{{data.0.deporte}}</h1>
+    {{#if data}}
+        {{#each data}}
+            <div class="card mb-3" style="max-width: 100%;">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+                    <img src="/images/{{this.deporte}}.jpg" class="card-img" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                    <div class="card-body">
+                        <h3 class="card-title">{{this.evento}}</h5>
+                        <h5 class="card-text">{{this.fecha}}</p>
+                        <a href="/pick/{{this.id}}"><button class="btn btn-primary">Ver más</button></a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        {{/each}}
+    {{else}}
+        <h2>No se encontraron resultados</h2>
+    {{/if}}
+</div>
